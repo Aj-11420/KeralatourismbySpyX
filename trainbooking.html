@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Booking with Passenger Details</title>
+  <link rel="stylesheet" href="trainbooking.css">
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <header>
+    <h1>Train Booking</h1>
+       <nav>
+            <ul>
+                <li><a href="flightbooking.html">Flight Bookings</a></li>
+                <li><a href="trainbooking.html">Train Bookings</a></li>
+                <li><a href="hotel.html">Hotel Bookings</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+  </header>
+
+  <main>
+    <form id="train-booking-form">
+      <label for="train-select">Select Train Number:</label>
+      <select id="train-select" required>
+        <option value="12001">12001</option>
+        <option value="16334">16334</option>
+        <option value="12623">12623</option>
+        <option value="16605">16605</option>
+      </select>
+
+      <h2>Train Name: <span id="train-name">---</span></h2>
+      <h3>Route:</h3>
+      <ul id="train-route">
+        <li>---</li>
+      </ul>
+
+      <label for="passenger-name">Passenger Name:</label>
+      <input type="text" id="passenger-name" name="passenger-name" required>
+
+      <label for="aadhaar-number">Aadhaar Number:</label>
+      <input type="text" id="aadhaar-number" name="aadhaar-number" pattern="\d{12}" required placeholder="Enter 12-digit Aadhaar">
+
+      <label for="phone-number">Phone Number:</label>
+      <input type="text" id="phone-number" name="phone-number" pattern="\d{10}" required placeholder="Enter 10-digit phone number">
+
+      <button type="submit">Book Ticket</button>
+    </form>
+  </main>
+<footer>
+        <p> 2025 SpyX all rights reserved</p>
+    </footer>
+  <script src="trainbooking.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* General Reset */
+body, h1, h2, h3, p, div, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f6f3f3;
+    color: #333;
+    background-image:cover;
+}
+
+/* Header styles */
+header {
+    background-color: #080a0b;
+    color: #e70808;
+    padding: 10px 20px;
+    text-align:center;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 12px solid #dfd8d8
+}
+nav ul {
+    list-style: none;
+    padding: 10;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #e9e1e1;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.logout-button button {
+    background-color: #ef5350;
+    color: white;
+    border:none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logout-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.logout-button button:hover {
+    background-color: #d32f2f;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    border: 15px solid #079d2f9c
+}
+
+.states-list {
+    max-width: 1200px;
+    margin: auto;
+    display: grid; /* Using grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Space between boxes */
+    justify-content: center;
+}
+
+.states {
+    background-color: #4add4aab;
+    border: 8px solid #dfd8d8;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0;
+    color: #070505;
+}
+
+.states:hover {
+    transform: scale(1.05);
+}
+
+.states img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: ##090505;
+    color: #f30101;
+    position: relative;
+    border: 9px solid #dfd8d8
+}

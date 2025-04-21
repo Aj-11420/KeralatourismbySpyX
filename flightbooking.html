@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Booking</title>
+  <link rel="stylesheet" href="flightbooking.css">
+ <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <header>
+    <h1>Flight Booking System</h1>
+        <nav>
+            <ul>
+                <li><a href="flightbooking.html">Flight Bookings</a></li>
+                <li><a href="trainbooking.html">Train Bookings</a></li>
+                <li><a href="hotel.html">Hotel Bookings</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+    <form id="flight-booking-form">
+      <label for="flight-select">Select Flight Number:</label>
+      <select id="flight-select" required>
+        <option value="AI101">AI101</option>
+        <option value="EK202">EK202</option>
+        <option value="SG303">SG303</option>
+        <option value="BA404">BA404</option>
+      </select>
+
+      <h2>Flight Name: <span id="flight-name">---</span></h2>
+      <h3>Route:</h3>
+      <ul id="flight-route">
+        <li>---</li>
+      </ul>
+
+      <label for="passenger-name">Passenger Name:</label>
+      <input type="text" id="passenger-name" name="passenger-name" required>
+
+      <label for="aadhaar-number">Aadhaar Number:</label>
+      <input type="text" id="aadhaar-number" name="aadhaar-number" pattern="\d{12}" required placeholder="Enter 12-digit Aadhaar">
+
+      <label for="phone-number">Phone Number:</label>
+      <input type="text" id="phone-number" name="phone-number" pattern="\d{10}" required placeholder="Enter 10-digit phone number">
+
+      <label for="date-of-travel">Date of Travel:</label>
+      <input type="date" id="date-of-travel" name="date-of-travel" required>
+
+      <button type="submit">Book Flight</button>
+    </form>
+  </main>
+<footer>
+        <p> 2025 SpyX all rights reserved</p>
+    </footer>
+  <script src="flightbooking.js"></script>
+</body>
+</html>

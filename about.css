@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #264653;
+}
+
+section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: square;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
